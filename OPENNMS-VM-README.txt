@@ -2,9 +2,9 @@ Introduction
 ------------
 
 This VM image is provided in the hope that it makes OpenNMS a little easier
-to evaluate OpenNMS.  All of the initial configuration work has been done on
-this VM so that after modifying two files you should be able to start OpenNMS
-and kick the tires.  It is not recommended that this VM image be used in
+to evaluate.  All of the initial configuration work has been done on this VM
+so that after modifying two files you should be able to start OpenNMS and
+kick the tires.  It is not recommended that this VM image be used in
 production except for smaller networks.
 
 The VM
