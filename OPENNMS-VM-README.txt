@@ -10,9 +10,10 @@ production except for smaller networks.
 The VM
 ------
 
-This VM was created with Mandriva 2008 in VMware server 1.0.3.  This VM is
-compatible with VMware Workstation 4.x and higher, VMware Server 1.x and
-higher, and VMware Player 1.x and higher.
+This VM was created with Mandriva 2008 in VMware Server 1.0.3.  This VM is
+expected to be compatible with VMware Workstation 5.x and higher, VMware
+Server 1.x and higher, VMware Player 2.x and higher, and VMware Fusion, but 
+has not been tested on the full range of VMware products.
 
 It was built to use 768 MB of RAM and 4GB of disk space.  It is installed
 with OpenNMS 1.3.9.
