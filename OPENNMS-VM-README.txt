@@ -16,7 +16,7 @@ Server 1.x and higher, VMware Player 2.x and higher, and VMware Fusion, but
 has not been tested on the full range of VMware products.
 
 It was built to use 768 MB of RAM and 4GB of disk space.  It is installed
-with OpenNMS 1.5.90.
+with OpenNMS 1.5.91.
 
 The root password is "r00t".
 
@@ -179,11 +179,16 @@ After you have modified those files, run:
 
 to start OpenNMS.
 
-If it returns "OK" you're good to go.  Point your browser to
+If it returns "OK" you're good to go.  To make sure that OpenNMS starts every
+time, run:
+
+  /sbin/chkconfig opennms on
+
+Now that OpenNMS is running, point your browser to:
 
   http://[opennms VM Address]:8980/opennms
 
-where [opennms VM Address] is the hostname or IP address for the VM, and
+...where [opennms VM Address] is the hostname or IP address for the VM, and
 
   username: admin
   password: admin
