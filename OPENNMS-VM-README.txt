@@ -16,7 +16,7 @@ Server 1.x and higher, VMware Player 2.x and higher, and VMware Fusion, but
 has not been tested on the full range of VMware products.
 
 It was built to use 768 MB of RAM and 4GB of disk space.  It is installed
-with OpenNMS 1.5.93.
+with OpenNMS 1.5.97.
 
 The root password is "r00t".
 
@@ -60,13 +60,15 @@ file.
 By default it looks like this:
 
 <discovery-configuration threads="1" packets-per-second="1"
-        initial-sleep-time="300000" restart-sleep-time="86400000"
-        retries="3" timeout="800">
+        initial-sleep-time="30000" restart-sleep-time="86400000"
+        retries="1" timeout="2000">
 
-        <include-range retries="2" timeout="3000">
-                <begin>192.168.0.1</begin>
-                <end>192.168.0.254</end>
-        </include-range>
+    <!-- see examples/discovery-configuration.xml for options
+    <include-range>
+        <begin>192.168.0.1</begin>
+        <end>192.168.0.254</end>
+    </include-range>
+    -->
 
 </discovery-configuration>
 
@@ -83,7 +85,7 @@ file to read:
 
 <discovery-configuration threads="1" packets-per-second="1"
         initial-sleep-time="300000" restart-sleep-time="86400000"
-        retries="3" timeout="800">
+        retries="1" timeout="2000">
 
         <include-range>
                 <begin>10.1.1.1</begin>
@@ -92,14 +94,12 @@ file to read:
 
 </discovery-configuration>
 
-Note that the include file has been removed.
-
 If you had another network to scan, say 172.20.1.0, you just add another
 definition tag, making the file:
 
 <discovery-configuration threads="1" packets-per-second="1"
         initial-sleep-time="300000" restart-sleep-time="86400000"
-        retries="3" timeout="800">
+        retries="1" timeout="2000">
 
         <include-range>
                 <begin>10.1.1.1</begin>
@@ -175,7 +175,7 @@ Starting It All Up
 
 After you have modified those files, run:
 
-  /sbin/service opennms start
+  /sbin/service opennms restart
 
 to start OpenNMS.
 
