@@ -16,7 +16,7 @@ Server 1.x and higher, VMware Player 2.x and higher, and VMware Fusion, but
 has not been tested on the full range of VMware products.
 
 It was built to use 768 MB of RAM and 4GB of disk space.  It is installed
-with OpenNMS 1.5.98.
+with OpenNMS 1.5.99.
 
 The root password is "r00t".
 
